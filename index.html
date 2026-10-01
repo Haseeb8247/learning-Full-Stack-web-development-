@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30-Day Full-Stack Roadmap</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">30-DAY PLACEMENT-READY PLAN</div>
+      <h1>Full-Stack Development Roadmap</h1>
+      <p>3 subjects • 30 days • 12 units • 3 projects • Tick each task as you finish it.</p>
+    </div>
+    <button id="resetBtn" class="reset-btn">Reset progress</button>
+  </header>
+
+  <section class="progress-card">
+    <div class="progress-head">
+      <div>
+        <strong id="progressPercent">0%</strong>
+        <span> overall progress</span>
+      </div>
+      <span id="progressText">0 / 30 days complete</span>
+    </div>
+    <div class="progress-track"><div id="progressBar" class="progress-fill"></div></div>
+    <div class="stats">
+      <div class="stat"><b id="daysDone">0</b><span>/ 30<br>DAYS DONE</span></div>
+      <div class="stat"><b id="tasksDone">0</b><span id="tasksTotal">/ 0<br>TASKS DONE</span></div>
+      <div class="stat"><b id="topicsDone">0</b><span id="topicsTotal">/ 0<br>TOPICS DONE</span></div>
+      <div class="stat"><b id="hoursDone">0</b><span>HRS<br>COMPLETED</span></div>
+    </div>
+  </section>
+
+  <nav class="filters">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="frontend">Frontend</button>
+    <button class="filter" data-filter="backend">Backend</button>
+    <button class="filter" data-filter="professional">Professional</button>
+  </nav>
+
+  <main id="dayList"></main>
+</div>
+
+<div id="dayModal" class="modal hidden">
+  <div class="modal-backdrop" data-close="true"></div>
+  <section class="modal-card">
+    <button class="modal-close" id="closeModal">×</button>
+    <div id="modalContent"></div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
